@@ -1,6 +1,7 @@
 import { Socials } from "@/constants";
 import Image from "next/image";
 import React from "react";
+import { FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -46,12 +47,10 @@ const Navbar = () => {
             href="https://www.linkedin.com/in/deniz-misirlioglu-6b247a22a/"
             target="_blank"
           >
-            <Image
-              src="/Linkedin.png"
-              alt="Linkedin"
-              key="/Linkedin.png"
+            <FaLinkedin
               width={24}
               height={24}
+              style={{ color: "#ffffff", width: 24, height: 24 }}
             />
           </a>
         </div>

@@ -124,7 +124,7 @@ export const Frontend_skill = [
   },
   {
     skill_name: "Assembly",
-    Image: "/assembly.png",
+    Image: "/Assembly.png",
     width: 80,
     height: 80,
   },
