@@ -6,6 +6,15 @@
 .cursive {
   font-family: "Cedarville Cursive", cursive;
 }
+
+.navBarEl {
+  transition: padding 0.3s ease; /* Apply transition for smooth padding changes */
+}
+
+.navBarEl:hover {
+  padding: 3px; /* Add padding on hover */
+}
+
 .Welcome-text {
   background: linear-gradient(
       0deg,
