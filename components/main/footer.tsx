@@ -19,8 +19,7 @@ const Footer = () => {
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
             <div className="font-bold">About</div>
             <p className="flex flex-row items-center  ">
-              For business inquiries, contact me on &nbsp;
-              <FaLinkedin />
+              For business inquiries, contact me on
               <a
                 target="_blank"
                 rel="noopener noreferrer"

@@ -9,6 +9,7 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import { FaLinkedin } from "react-icons/fa";
 
 const HeroContent = () => {
   return (
@@ -46,9 +47,12 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a pursuing a degree in Computer Engineering and throughout my
-          academic journey, I have developed a strong skillset in software and
-          hardware design.
+          I&apos;m a Computer Engineering and throughout my academic journey, I
+          have developed a strong skillset in software and hardware design.
+          Source code from my projects can be found on my{" "}
+          <a href="https://github.com/Deniz-Misirlioglu" target="_blank">
+            <u>Github</u>
+          </a>
         </motion.p>
       </div>
 
