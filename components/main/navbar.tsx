@@ -1,7 +1,7 @@
 import { Socials } from "@/constants";
 import Image from "next/image";
 import React from "react";
-import { FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -35,12 +35,10 @@ const Navbar = () => {
 
         <div className="flex flex-row gap-5">
           <a href="https://github.com/Deniz-Misirlioglu" target="_blank">
-            <Image
-              src="/gitwhite.png"
-              alt="GitHub"
-              key="/gitwhite.png"
+            <FaGithub
               width={24}
               height={24}
+              style={{ color: "#ffffff", width: 24, height: 24 }}
             />
           </a>
           <a

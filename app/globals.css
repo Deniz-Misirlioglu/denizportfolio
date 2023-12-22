@@ -71,6 +71,24 @@
   display: none;
 }
 
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #210c52;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #210c52;
+  border-radius: 100px;
+}
 html {
   scroll-behavior: smooth;
 }
