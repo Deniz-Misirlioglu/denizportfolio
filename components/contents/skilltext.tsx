@@ -20,7 +20,17 @@ const SkillText = () => {
         variants={slideInFromLeft(0.5)}
         className="text-[30px] text-white font-medium mt-[0px] text-center mb-[15px]"
       >
-        Making apps with modern technologies
+        Modern Technologies that I have used in recent projects
+      </motion.div>
+      <motion.div
+        variants={slideInFromLeft(0.5)}
+        className="text-[20px] text-white font-medium mt-[20px] text-center mb-[15px]"
+      >
+        Skills for specific projects are displayed in my{" "}
+        <span className="text-[20px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
+          projects{" "}
+        </span>
+        below
       </motion.div>
     </div>
   );
