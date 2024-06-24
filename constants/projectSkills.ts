@@ -104,7 +104,7 @@ export const Project_skill_data = [
   },
   {
     skill_name: "jQuery",
-    Image: "/jQUery.png",
+    Image: "/Jquery.png",
     width: 45,
     height: 45,
   },
