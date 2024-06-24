@@ -1,0 +1,33 @@
+{
+  "items": {
+    "projects": [
+      {
+        "src": "/hideandseek4.png",
+        "title": "Red/Blue Video Game for Attack and Defense Analysis Based on the Seekers Dilemma",
+        "description": "The background of the project revolves around the exploration of the dynamics of a Hide&Seek  game, serving as a simulation for cybersecurity and hardware trojan practices. The rules are based on the principles of “The Seeker’s Dilemma.” “The Seeker’s Dilemma” is Hide&Seek on a graph that is based on game theory. The principles of the seeker’s dilemma are, that the hardware trojans are hidden from the detection algorithm, the number of objects that are hidden is unknown, and the game is limited to two players. Knowing these principles, the rules of our Hide&Seek game align with the principles.",
+        "id": 1,
+        "skills": ["Unreal Engine 5", "Python", "MongoDB", "C++", "Steamworks"],
+        "skillsImage": [12, 13, 14, 15, 16],
+        "Github": "https://github.com/Deniz-Misirlioglu/SeniorProject",
+        "Research": "https://github.com/Deniz-Misirlioglu/SeniorProject/blob/master/HideAndSeek.pdf"
+      },
+      {
+        "src": "/stockify.png",
+        "title": "Stockify Web Application",
+        "description": "Created a full stack web application with the use of Polygons.io stock retrieval API letting users pick an exchange, and stock to view data. All history of a stock was then stored into a database hosted by SQL lite which allowed users to view previous prices and show all analytical data. PHP was used for database communcation and the application was developed with HTML and CSS",
+        "id": 2,
+        "skills": ["HTML", "CSS", "PHP", "JavaScript", "JQuery", "SQL"],
+        "skillsImage": [0, 1, 18, 2, 17, 19],
+        "Github": "https://github.com/Deniz-Misirlioglu/Stockify/tree/main"
+      },
+      {
+        "src": "/merged.png",
+        "title": "ANSYS Pcie7.0 Simulation",
+        "description": "This project's purpose was to create and simulate a PCI Express 7.0 interconnect in Ansys. This project’s main intention was to create a single trace route of an on-chip and off-chip interconnect, which spans 3 layers. The interconnect includes two vias, and also two 90-degree turns between the start and end of the trace. The decision to apply the 90-degree turns on each of the vias was used. Later in the report, analysis will demonstrate if this idea produces an optimal outcome. The power pads were also placed at the maximum distance apart from the traces to minimize any unnecessary noise. The results of this project demonstrate how optimized the signal trace is after traversing through the interconnect at given frequencies.",
+        "id": 3,
+        "skills": ["Ansys", "MatLab", "Embedded C"],
+        "skillsImage": [20, 21, 22]
+      }
+    ]
+  }
+}
