@@ -4,6 +4,7 @@ import "./globals.css";
 import StarsCanvas from "@/components/main/starbackground";
 import Navbar from "@/components/main/navbar";
 import Footer from "@/components/main/footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
         <StarsCanvas></StarsCanvas>
         <Navbar></Navbar>
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
