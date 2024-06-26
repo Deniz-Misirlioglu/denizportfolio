@@ -15,7 +15,7 @@ const Navbar = () => {
           className="h-auto w-auto flex flex-row items-center"
         >
           <span className="font-bold ml-[10px] hidden md:block text-gray-300">
-            Deniz's Portfolio
+            Deniz&apos;s Portfolio
           </span>
         </a>
         <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
