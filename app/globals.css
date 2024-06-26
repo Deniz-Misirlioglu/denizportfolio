@@ -92,3 +92,20 @@
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: -33% 50%;
+  } /* instead of 0% 50% */
+}
+
+.color-animation {
+  background: linear-gradient(to right, black, white);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient-shift 5s linear infinite;
+}

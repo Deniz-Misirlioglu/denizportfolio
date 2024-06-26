@@ -23,7 +23,7 @@
       {
         "src": "/merged.png",
         "title": "ANSYS Pcie7.0 Simulation",
-        "description": "This project's purpose was to create and simulate a PCI Express 7.0 interconnect in Ansys. This project’s main intention was to create a single trace route of an on-chip and off-chip interconnect, which spans 3 layers. The interconnect includes two vias, and also two 90-degree turns between the start and end of the trace. The decision to apply the 90-degree turns on each of the vias was used. Later in the report, analysis will demonstrate if this idea produces an optimal outcome. The power pads were also placed at the maximum distance apart from the traces to minimize any unnecessary noise. The results of this project demonstrate how optimized the signal trace is after traversing through the interconnect at given frequencies.",
+        "description": "This project's purpose was to create and simulate a PCI Express 7.0 interconnect in Ansys. This project’s main intention was to create a single trace route of an on-chip and off-chip interconnect, which spans 3 layers. The interconnect includes two vias, and also two 90-degree turns between the start and end of the trace. The decision to apply the 90-degree turns on each of the vias was used. Analysis will demonstrate if this idea produces an optimal outcome. The power pads were also placed at the maximum distance apart from the traces to minimize any unnecessary noise. The results of this project demonstrate how optimized the signal trace is after traversing through the interconnect at given frequencies.",
         "id": 3,
         "skills": ["Ansys", "MatLab", "Embedded C"],
         "skillsImage": [20, 21, 22]

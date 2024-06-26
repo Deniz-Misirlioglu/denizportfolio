@@ -13,8 +13,11 @@ const Navbar = () => {
         <a
           href="#about-me"
           className="h-auto w-auto flex flex-row items-center"
-        ></a>
-
+        >
+          <span className="font-bold ml-[10px] hidden md:block text-gray-300">
+            Deniz's Portfolio
+          </span>
+        </a>
         <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
           <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[13px] rounded-full text-gray-200">
             <a href="#about-me" className="navBarEl cursor-pointer">

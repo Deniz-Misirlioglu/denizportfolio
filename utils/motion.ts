@@ -37,3 +37,16 @@ export const slideInFromTop = {
     },
   },
 };
+
+export const textAnimation = {
+  hidden: { color: "#000000" },
+  visible: {
+    color: "#000000",
+    transition: {
+      duration: 1,
+      ease: "easeInOut",
+      repeat: Infinity,
+      repeatType: "reverse",
+    },
+  },
+};
