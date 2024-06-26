@@ -11,7 +11,7 @@ const Projects = () => {
       id="projects  z-10"
     >
       <Projectstext />
-      <div className="h-1/2 w-1/2 flex-col md:flex-row gap-20 px-10 py-5  z-50">
+      <div className="h-1/2 w-1/2 flex-col md:flex-row gap-20 px-10 py-5  z-30">
         {projects.map((items) => (
           <ProjectCard
             key={items.id}

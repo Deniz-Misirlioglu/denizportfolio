@@ -36,7 +36,7 @@ const ProjectCard = ({
         />
       </div>
       <div className="relative p-6 z-10">
-        <h1 className="text-2xl font-semibold text-white mb-6 relative z-20">
+        <h1 className="text-2xl font-semibold text-white mb-6 relative">
           {title}{" "}
           {github && (
             <a
@@ -66,16 +66,14 @@ const ProjectCard = ({
             </a>
           )}
         </h1>
-        <p className="relative mt-2 text-gray-300 my-[15px] z-20">
-          {description}
-        </p>
+        <p className="relative mt-2 text-gray-300 my-[15px]">{description}</p>
         {skills.map((skill, index) => {
           const image = Project_skill_data[skillsImage[index]];
           return (
             <motion.div
               key={index}
               variants={slideInFromTop}
-              className="Welcome-box py-2 my-1 px-3 border border-[#7042f88b] opacity-90 relative z-20 flex flex-wrap items-center"
+              className="Welcome-box py-2 my-1 px-3 border border-[#7042f88b] opacity-90 relative flex flex-wrap items-center"
             >
               <div className="flex items-center space-x-2 px-2">
                 <Image
