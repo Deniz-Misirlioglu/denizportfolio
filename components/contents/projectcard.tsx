@@ -83,7 +83,7 @@ const ProjectCard = ({
                   alt={`skill image ${skill}`}
                   id={"img" + index.toString()}
                 />
-                <p className="Welcome-text text-xs sm:text-sm md:text-base hidden sm:block">
+                <p className="Welcome-text text-xs sm:text-sm md:text-base  sm:block">
                   {skill}
                 </p>
               </div>

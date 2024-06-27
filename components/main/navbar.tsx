@@ -1,43 +1,96 @@
+"use client";
 import { Socials } from "@/constants";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 640);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Check screen size on initial render
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div
-      className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10"
+      className={`w-full fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 ${
+        isSmallScreen ? "h-[50px] px-5" : "h-[65px] px-10"
+      }`}
       id="navcont"
     >
-      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
+      <div
+        className={`w-full h-full flex flex-row items-center justify-between m-auto ${
+          isSmallScreen ? "px-2" : "px-[10px]"
+        }`}
+      >
         <a
           href="#about-me"
           className="h-auto w-auto flex flex-row items-center"
         >
-          <span className="font-bold ml-[10px] hidden md:block text-gray-300">
+          <span
+            className={`font-bold ml-[10px] hidden md:block text-gray-300 ${
+              isSmallScreen ? "text-sm" : "text-lg"
+            }`}
+          >
             Deniz&apos;s Portfolio
           </span>
         </a>
-        <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
-          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[13px] rounded-full text-gray-200">
-            <a href="#about-me" className="navBarEl cursor-pointer">
+        <div
+          className={`h-full flex flex-row items-center justify-between ${
+            isSmallScreen ? "w-[250px]" : "w-[500px] md:mr-20"
+          }`}
+        >
+          <div
+            className={`flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] ${
+              isSmallScreen
+                ? "mr-[5px] px-[10px] py-[7px]"
+                : "mr-[15px] px-[20px] py-[13px]"
+            } rounded-full text-gray-200`}
+          >
+            <a
+              href="#about-me"
+              className={`navBarEl cursor-pointer hover:text-[#ba9cff] ${
+                isSmallScreen ? "text-sm" : "text-base"
+              }`}
+            >
               About me
             </a>
-            <a href="#skills" className="navBarEl">
+            <a
+              href="#skills"
+              className={`navBarEl hover:text-[#ba9cff] ${
+                isSmallScreen ? "text-sm" : "text-base"
+              }`}
+            >
               Skills
             </a>
-            <a href="#projects" className="navBarEl">
+            <a
+              href="#projects"
+              className={`navBarEl hover:text-[#ba9cff] ${
+                isSmallScreen ? "text-sm" : "text-base"
+              }`}
+            >
               Projects
             </a>
           </div>
         </div>
 
-        <div className="flex flex-row gap-5">
+        <div className={`flex flex-row ${isSmallScreen ? "gap-2" : "gap-5"}`}>
           <a href="https://github.com/Deniz-Misirlioglu" target="_blank">
             <FaGithub
-              width={24}
-              height={24}
-              style={{ color: "#ffffff", width: 24, height: 24 }}
+              style={{
+                color: "#ffffff",
+                width: isSmallScreen ? 20 : 24,
+                height: isSmallScreen ? 20 : 24,
+              }}
             />
           </a>
           <a
@@ -45,9 +98,11 @@ const Navbar = () => {
             target="_blank"
           >
             <FaLinkedin
-              width={24}
-              height={24}
-              style={{ color: "#ffffff", width: 24, height: 24 }}
+              style={{
+                color: "#ffffff",
+                width: isSmallScreen ? 20 : 24,
+                height: isSmallScreen ? 20 : 24,
+              }}
             />
           </a>
         </div>
