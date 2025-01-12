@@ -21,10 +21,7 @@ const Projects = () => {
     };
   }, []);
   return (
-    <div
-      className="flex flex-col items-center justify-center "
-      id="projects  z-10"
-    >
+    <div className="flex flex-col items-center justify-center " id="projects">
       <Projectstext />
       <div
         className={` ${
